@@ -18,7 +18,7 @@ puts "5 Skills created"
 
 9.times do |portfolio_item|
 		Portfolio.create!(
-			title: "Portfolio title: #{portfolio_item}",
+			title: "Portfolio title: #{portfolio_item + 1}",
 			subtitle: "My Great Service",
 			body: "Flexitarian sartorial offal hoodie af jean shorts keytar enamel pin helvetica. Pok pok before they sold out cold-pressed gentrify twee shaman adaptogen flexitarian blue bottle glossier health goth kale chips selvage typewriter. Normcore PBR&B chambray VHS waistcoat YOLO live-edge. Tofu hella narwhal venmo butcher. Austin hammock sriracha butcher, cornhole bicycle rights gastropub meggings copper mug. Ethical banh mi brooklyn mixtape mumblecore.",
 			main_image: "https://via.placeholder.com/600x400",
