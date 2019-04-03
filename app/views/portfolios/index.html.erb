@@ -4,9 +4,9 @@
 <!-- new_portfolio is a prefix which can be used with either _path or _url. _path translates to portfolios/new being added to the current url, whislt _url gives the full url eg http://localhost:3000/portfolios/new -->
 
 <% @portfolio_items.each do |portfolio_item| %>
-	<p><%= portfolio_item.title %></p>
+	<p><%= link_to portfolio_item.title, portfolio_path(portfolio_item) %></p>
   <p><%= portfolio_item.subtitle %></p>
   <p><%= portfolio_item.body %></p>
   <%= image_tag portfolio_item.thumb_image unless portfolio_item.thumb_image.nil? %>
-  <%= link_to "Edit", edit_portfolio_path(portfolio_item.id) %>
+  <%= link_to "Edit", edit_portfolio_path(portfolio_item) %>
   <% end %>
